@@ -21,4 +21,8 @@
 go.work
 
 vocabulary
+tmp*
+temp*
+tmp/
+temp/
 
