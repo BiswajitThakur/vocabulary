@@ -1,15 +1,9 @@
 package main
 
 import (
-	_ "log"
-
-	// badger "github.com/dgraph-io/badger/v4"
-	"github.com/gin-gonic/gin"
-
-	// c "github.com/ostafen/clover"
-	// badgerstore "github.com/ostafen/clover/v2/store/badger"
 	db "github.com/BiswajitThakur/vocabulary/db"
 	r "github.com/BiswajitThakur/vocabulary/router"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {

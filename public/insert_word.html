@@ -6,10 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/set_data" method="post" autocomplete="off"><br />
-        Word <input type="text" name="word" autocomplete="off"/><br />
-        Type <input type="text" name="type" autocomplete="on"/><br />
-        Meaning <input type="text" name="meaning" autocomplete="off"/><br /><br />
+    <h2>Insert Word</h2>
+    <form id="myForm" method="post" autocomplete="off"><br />
+        Word <input type="text" id="word" name="word" autocomplete="off" required /><br />
+        <label for="type">Type</label>
+        <select name="type" id="type">
+            <option value="">--Please choose an option--</option>
+            <option value="Noun">Noun</option>
+            <option value="Verb">Verb</option>
+            <option value="Adjective">Adjective</option>
+            <option value="Adverb">Adverb</option>
+        </select><br />
+        Meaning <input type="text" id="meaning" name="meaning" autocomplete="off"/><br /><br />
         Synonym <div>
             <div id="synonym_input">
                 <!--<input type="text" name="synonym[]" /><br />-->
@@ -33,6 +41,7 @@
         <br />
         <input type="submit">
     </form>
+    <div id="status"></div>
     <script src="/src/js/insert_word.js"></script>
 </body>
 </html>
