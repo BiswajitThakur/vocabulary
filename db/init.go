@@ -41,7 +41,15 @@ func Init() (*mongo.Collection, *mongo.Collection) {
 	// 		panic(err)
 	// 	}
 	// }()
-	admins := client.Database("vocabulary").Collection("admin")
-	adminsCollection := client.Database("vocabulary").Collection("words")
+	database := os.Getenv("DATABASE")
+	if database == "" {
+	    log.Fatal("DATABASE: environment variable not found.")
+	}
+	collection := os.Getenv("COLLECTION")
+	if collection == "" {
+	    log.Fatal("COLLECTION: environment variable not found.")
+	}
+	admins := client.Database(database).Collection("admin")
+	adminsCollection := client.Database(database).Collection(collection)
 	return admins, adminsCollection
 }
