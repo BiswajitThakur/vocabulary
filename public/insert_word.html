@@ -6,22 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/set_data" method="post"><br />
-        Word <input type="text" name="word" /><br />
-        Type <input type="text" name="type" /><br />
-        Meaning <input type="text" name="meaning" /><br /><br />
-        Synonym <input type="text" name="synonym[]" /><br />
-        <input type="text" name="synonym[]" /><br />
-        <input type="text" name="synonym[]" /><br /><br />
-        Antonym <input type="text" name="antonym[]" /><br />
-        <input type="text" name="antonym[]" /><br /><br />
-        Examples <input type="text" name="examples[]" /><br />
-        <input type="text" name="examples[]" /><br />
-        <input type="text" name="examples[]" /><br />
+    <form action="/set_data" method="post" autocomplete="off"><br />
+        Word <input type="text" name="word" autocomplete="off"/><br />
+        Type <input type="text" name="type" autocomplete="on"/><br />
+        Meaning <input type="text" name="meaning" autocomplete="off"/><br /><br />
+        Synonym <div>
+            <div id="synonym_input">
+                <!--<input type="text" name="synonym[]" /><br />-->
+            </div>
+            <input type="button" value="Add Synonym" id="add_synonym"/>
+        </div>
+        <br />
+        Antonym <div>
+            <div id="antonym_input">
+                <!--<input type="text" name="antonym[]" /><br />-->
+            </div>
+            <input type="button" value="Add Antonym" id="add_antonym"/>
+        </div>
+        <br />
+        Examples <div>
+            <div id="examples_input">
+                <!--<input type="text" name="examples[]" /><br />-->
+            </div>
+            <input type="button" value="Add Examples" id="add_examples"/>
+        </div>
+        <br />
         <input type="submit">
     </form>
-    <script>
-        
-    </script>
+    <script src="/src/js/insert_word.js"></script>
 </body>
 </html>
