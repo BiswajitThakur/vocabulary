@@ -5,10 +5,10 @@ This repo is designed to help users learn new vocabulary and save their learned 
 ## This project is under development not recomend to use.
 
 ## Features
-- [x] Add words, type, meaning, synonym, antonym, examples
-- [ ] Update words, type, meaning, synonym, antonym, examples
-- [ ] Delete words, type, meaning, synonym, antonym, examples
-- [ ] Backup
+- [x] Add word (Type, Meaning, Synonym, Antonym, Examples)
+- [ ] Update
+- [x] Delete
+- [ ] Backup & Restore
 
 ## How to Run
 
