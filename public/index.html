@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vocabulary</title>
-</head>
-<body>
-    <h1>Vocabulard</h1>
-    <h3><a href="/src/collections.html">Show Collections</a></h3>
-    <h3><a href="/src/insert_word.html">Add Words</a></h3>
-</body>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+      *,
+      *:after,
+      *:before {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        line-height: 1.5;
+        background-color: #f1f3fb;
+        padding: 0 2rem;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+    
+      input {
+        appearance: none;
+        border-radius: 0;
+      }
+
+      .card {
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 425px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
+        padding: 0.75rem;
+      }
+
+      .card-image {
+        border-radius: 8px;
+        overflow: hidden;
+        padding-bottom: 65%;
+        background-image: url("https://assets.codepen.io/285131/coffee_1.jpg");
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: 0 5%;
+        position: relative;
+      }
+
+      .card-heading {
+        position: absolute;
+        left: 10%;
+        top: 15%;
+        right: 10%;
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #735400;
+        line-height: 1.222;
+        small {
+          display: block;
+          font-size: 0.75em;
+          font-weight: 400;
+          margin-top: 0.25em;
+        }
+      }
+
+.a1
+{
+    text-decoration: none;
+}
+ .a2{
+    margin-top:10px ;
+ }     
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card-image">
+        <div>
+          <h1 class="card-heading">Vocabulard</h1>
+        </div>
+      </div>
+      <div class="a2">
+        <button style="background-color:black;border-radius: 10%;"><a href="/src/collections.html" style="color: whitesmoke;" class='a1'>Show Collections</a></button><br/>
+        </div>
+        <div class="a2">
+        <button style="background-color:white;border-radius: 10%;"><a href="/src/insert_word.html" style="color:black;" class='a1'>Add Words</a></button>
+      </div>
+    </div>
+  </body>
 </html>
