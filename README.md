@@ -4,7 +4,7 @@ This repo is designed to help users learn new vocabulary and save their learned 
 
 ## This project is under development not recomend to use.
 
-## Features
+## ToDo
 - [x] Add word (Type, Meaning, Synonym, Antonym, Examples)
 - [ ] Update
 - [x] Delete
